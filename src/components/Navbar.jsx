@@ -42,12 +42,15 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px- gap-6 text-base ">{links}</ul>
         </div>
         <div className="navbar-end">
-          <NavLink className="px-6 py-2 rounded-lg">
-            My Profile
-          </NavLink>
-          <Link className="py-2 px-6 rounded-lg bg-[#0fac9f] text-white cursor-pointer font-semibold hover:bg-[#0c8d82]">
-            Login
-          </Link>
+          <NavLink className="px-6 py-2 rounded-lg">My Profile</NavLink>
+          <button>
+            <Link
+              to="/login"
+              className="py-2 px-6 text-lg rounded-lg bg-teal-500 text-white cursor-pointer font-semibold hover:bg-teal-600"
+            >
+              Log In
+            </Link>
+          </button>
         </div>
       </div>
     );
