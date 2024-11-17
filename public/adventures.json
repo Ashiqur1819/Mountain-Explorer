@@ -2,7 +2,7 @@
   {
     "id": "1",
     "adventureTitle": "Summit Serenity Trek",
-    "image": "summit_serenity.jpg",
+    "image": "https://i.ibb.co.com/JqcYyZq/Mountain-Serenity-Trek.jpg",
     "categoryName": "High Altitude",
     "shortDescription": "A tranquil journey to the mountain's peak with stunning views.",
     "adventureCost": 300,
@@ -26,7 +26,7 @@
   {
     "id": "2",
     "adventureTitle": "Eco Forest Hike",
-    "image": "eco_forest_hike.jpg",
+    "image": "https://i.ibb.co.com/mh5ZKjC/Eco-Forest-Hike.jpg",
     "categoryName": "Nature Walks",
     "shortDescription": "Explore lush forests and discover local wildlife.",
     "adventureCost": 120,
@@ -50,7 +50,7 @@
   {
     "id": "3",
     "adventureTitle": "Alpine Lake Trail",
-    "image": "alpine_lake_trail.jpg",
+    "image": "https://i.ibb.co.com/wYwqsp1/Alpine-Lake-Trail.webp",
     "categoryName": "High Altitude",
     "shortDescription": "A scenic trail leading to a pristine alpine lake.",
     "adventureCost": 250,
@@ -74,7 +74,7 @@
   {
     "id": "4",
     "adventureTitle": "Rainforest Canopy Walk",
-    "image": "rainforest_canopy_walk.jpg",
+    "image": "https://i.ibb.co.com/N1Ztfv0/Rainforest-Canopy-Walk.jpg",
     "categoryName": "Nature Walks",
     "shortDescription": "Walk above the trees and enjoy breathtaking rainforest views.",
     "adventureCost": 200,
@@ -98,7 +98,7 @@
   {
     "id": "5",
     "adventureTitle": "Desert Oasis Trek",
-    "image": "desert_oasis_trek.jpg",
+    "image": "https://i.ibb.co.com/2qSbx38/Desert-Oasis-Trek.jpg",
     "categoryName": "Desert Treks",
     "shortDescription": "Discover hidden oases and marvel at vast desert landscapes.",
     "adventureCost": 350,
@@ -122,7 +122,7 @@
   {
     "id": "6",
     "adventureTitle": "Volcanic Ridge Trek",
-    "image": "volcanic_ridge_trek.jpg",
+    "image": "https://i.ibb.co.com/DMWwxZz/Volcanic-Ridge-Trek.jpg",
     "categoryName": "Extreme Adventures",
     "shortDescription": "Hike up active volcanic ridges for an unforgettable experience.",
     "adventureCost": 400,
@@ -146,7 +146,7 @@
   {
     "id": "7",
     "adventureTitle": "Glacier Adventure Hike",
-    "image": "glacier_adventure_hike.jpg",
+    "image": "https://i.ibb.co.com/3kKBntr/Glacier-Adventure-Hike.jpg",
     "categoryName": "Ice Adventures",
     "shortDescription": "Traverse icy terrains and learn about glacial ecosystems.",
     "adventureCost": 450,
@@ -170,7 +170,7 @@
   {
     "id": "8",
     "adventureTitle": "Wildflower Valley Hike",
-    "image": "wildflower_valley_hike.jpg",
+    "image": "https://i.ibb.co.com/8cVfWpx/Wildflower-Valley-Hike.jpg",
     "categoryName": "Flora Expeditions",
     "shortDescription": "Immerse yourself in a sea of vibrant wildflowers.",
     "adventureCost": 150,
@@ -194,7 +194,7 @@
   {
     "id": "9",
     "adventureTitle": "Mountain Meadows Exploration",
-    "image": "mountain_meadows_exploration.jpg",
+    "image": "https://i.ibb.co.com/N90pcFF/Mountain-Meadows-Exploration.jpg",
     "categoryName": "Flora Expeditions",
     "shortDescription": "Wander through expansive meadows surrounded by towering peaks.",
     "adventureCost": 180,
@@ -218,7 +218,7 @@
   {
     "id": "10",
     "adventureTitle": "Cultural Mountain Trek",
-    "image": "cultural_mountain_trek.jpg",
+    "image": "https://i.ibb.co.com/QQX6TB7/Cultural-Mountain-Trek.jpg",
     "categoryName": "Cultural Journeys",
     "shortDescription": "Experience local traditions and trek through mountain villages.",
     "adventureCost": 280,
@@ -247,7 +247,7 @@
   {
     "id": "11",
     "adventureTitle": "Coastal Cliff Trek",
-    "image": "coastal_cliff_trek.jpg",
+    "image": "https://i.ibb.co.com/QcnwCVT/Coastal-Cliff-Trek.jpg",
     "categoryName": "Coastal Treks",
     "shortDescription": "Trek along dramatic cliffs with spectacular ocean views.",
     "adventureCost": 220,
@@ -271,7 +271,7 @@
   {
     "id": "12",
     "adventureTitle": "Northern Lights Expedition",
-    "image": "northern_lights_expedition.jpg",
+    "image": "https://i.ibb.co.com/bgZKNpD/Northern-Lights-Expedition.jpg",
     "categoryName": "Extreme Adventures",
     "shortDescription": "Chase the mesmerizing Northern Lights in a remote wilderness.",
     "adventureCost": 500,
