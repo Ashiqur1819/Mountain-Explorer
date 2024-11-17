@@ -1,397 +1,295 @@
 [
   {
-    "AdventureTitle": "Mountain Serenity Trek",
-    "Image": "https://i.ibb.co.com/JqcYyZq/Mountain-Serenity-Trek.jpg",
-    "ID": "ECO001",
-    "CategoryName": "Mountain Treks",
-    "ShortDescription": "Embark on a breathtaking trek through pristine mountain trails and lush valleys.",
-    "AdventureCost": 150,
-    "BookingAvailability": "Available",
-    "Location": "Himalayan Foothills, Nepal",
-    "Duration": "3 Days, 2 Nights",
-    "AdventureLevel": "Moderate",
-    "IncludedItems": [
-      "Professional guide",
-      "Camping gear",
-      "Meals and refreshments"
+    "id": "1",
+    "adventureTitle": "Summit Serenity Trek",
+    "image": "summit_serenity.jpg",
+    "categoryName": "High Altitude",
+    "shortDescription": "A tranquil journey to the mountain's peak with stunning views.",
+    "adventureCost": 300,
+    "bookingAvailability": true,
+    "location": "Rocky Mountains, USA",
+    "duration": "3 days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Guide", "Meals", "Tents", "First Aid Kit"],
+    "ecoFriendlyFeatures": [
+      "Leave No Trace Policy",
+      "Solar Lanterns",
+      "Biodegradable Waste Disposal"
     ],
-    "EcoFriendlyFeatures": [
-      "No single-use plastics",
-      "Leave No Trace policy",
-      "Support for local communities"
-    ],
-    "MaxGroupSize": 10,
-    "SpecialInstructions": [
-      "Wear sturdy hiking boots",
-      "Bring warm clothing",
-      "Carry personal water bottles"
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Bring warm clothing.",
+      "Carry personal water bottles.",
+      "Physical fitness required."
     ]
   },
   {
-    "AdventureTitle": "Coral Reef Dive",
-    "Image": "https://i.ibb.co.com/H2Q73Wk/Coral-Reef-Dive.jpg",
-    "ID": "ECO002",
-    "CategoryName": "Ocean Dives",
-    "ShortDescription": "Dive into vibrant coral reefs and explore the stunning underwater world.",
-    "AdventureCost": 200,
-    "BookingAvailability": "Available",
-    "Location": "Great Barrier Reef, Australia",
-    "Duration": "1 Day",
-    "AdventureLevel": "Advanced",
-    "IncludedItems": [
-      "Scuba equipment",
-      "Expert dive instructor",
-      "Lunch on the boat"
+    "id": "2",
+    "adventureTitle": "Eco Forest Hike",
+    "image": "eco_forest_hike.jpg",
+    "categoryName": "Nature Walks",
+    "shortDescription": "Explore lush forests and discover local wildlife.",
+    "adventureCost": 120,
+    "bookingAvailability": true,
+    "location": "Great Smoky Mountains, USA",
+    "duration": "1 day",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Guide", "Lunch", "Binoculars"],
+    "ecoFriendlyFeatures": [
+      "Reusable Snack Wrappers",
+      "Educational Sessions",
+      "Non-Motorized Travel"
     ],
-    "EcoFriendlyFeatures": [
-      "Reef-safe sunscreen required",
-      "No-touch dive policy",
-      "Marine conservation funding"
-    ],
-    "MaxGroupSize": 8,
-    "SpecialInstructions": [
-      "Valid scuba certification required",
-      "Avoid touching marine life",
-      "Use biodegradable products"
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Wear comfortable shoes.",
+      "Bug spray recommended.",
+      "Suitable for all age groups."
     ]
   },
   {
-    "AdventureTitle": "Savanna Safari",
-    "Image": "https://i.ibb.co.com/GQTgYQ4/Savanna-Safari.jpg",
-    "ID": "ECO003",
-    "CategoryName": "Wildlife Safaris",
-    "ShortDescription": "Experience the untamed beauty of the savanna and witness incredible wildlife.",
-    "AdventureCost": 300,
-    "BookingAvailability": "Limited Slots",
-    "Location": "Maasai Mara, Kenya",
-    "Duration": "5 Days, 4 Nights",
-    "AdventureLevel": "Easy",
-    "IncludedItems": [
-      "Safari guide",
-      "4x4 vehicle tours",
-      "Luxury tent accommodations"
+    "id": "3",
+    "adventureTitle": "Alpine Lake Trail",
+    "image": "alpine_lake_trail.jpg",
+    "categoryName": "High Altitude",
+    "shortDescription": "A scenic trail leading to a pristine alpine lake.",
+    "adventureCost": 250,
+    "bookingAvailability": true,
+    "location": "Banff National Park, Canada",
+    "duration": "2 days",
+    "adventureLevel": "Moderate",
+    "includedItems": ["Guide", "Snacks", "Camping Equipment"],
+    "ecoFriendlyFeatures": [
+      "Biodegradable Utensils",
+      "Wildlife Awareness Program",
+      "Water Purification Systems"
     ],
-    "EcoFriendlyFeatures": [
-      "Solar-powered facilities",
-      "Waste management systems",
-      "Support for wildlife conservation"
-    ],
-    "MaxGroupSize": 12,
-    "SpecialInstructions": [
-      "Pack light and neutral-colored clothing",
-      "Bring binoculars",
-      "Stay quiet during sightings"
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Pack light but warm.",
+      "No plastic bags allowed.",
+      "Respect wildlife guidelines."
     ]
   },
   {
-    "AdventureTitle": "Forest Canopy Expedition",
-    "Image": "https://i.ibb.co.com/KhKTGhd/Forest-Canopy-Expedition.jpg",
-    "ID": "ECO004",
-    "CategoryName": "Forest Expeditions",
-    "ShortDescription": "Explore the lush canopy and biodiversity of a tropical rainforest.",
-    "AdventureCost": 180,
-    "BookingAvailability": "Available",
-    "Location": "Amazon Rainforest, Brazil",
-    "Duration": "2 Days, 1 Night",
-    "AdventureLevel": "Challenging",
-    "IncludedItems": [
-      "Guided nature walks",
-      "Overnight jungle lodging",
-      "Local meals"
+    "id": "4",
+    "adventureTitle": "Rainforest Canopy Walk",
+    "image": "rainforest_canopy_walk.jpg",
+    "categoryName": "Nature Walks",
+    "shortDescription": "Walk above the trees and enjoy breathtaking rainforest views.",
+    "adventureCost": 200,
+    "bookingAvailability": true,
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "Half Day",
+    "adventureLevel": "Easy",
+    "includedItems": ["Guide", "Refreshments", "Safety Gear"],
+    "ecoFriendlyFeatures": [
+      "Reforestation Support",
+      "Local Community Guides",
+      "Solar Powered Stations"
     ],
-    "EcoFriendlyFeatures": [
-      "Low-impact trail design",
-      "Eco-certified lodging",
-      "Education on sustainable practices"
-    ],
-    "MaxGroupSize": 6,
-    "SpecialInstructions": [
-      "Bring insect repellent",
-      "Pack lightweight rain gear",
-      "Wear breathable clothing"
+    "maxGroupSize": 20,
+    "specialInstructions": [
+      "Wear light clothing.",
+      "Bring a camera for photos.",
+      "Avoid bright colors."
     ]
   },
   {
-    "AdventureTitle": "River Rapids Adventure",
-    "Image": "https://i.ibb.co.com/WFnC9rF/River-Rapids-Adventure.jpg",
-    "ID": "ECO005",
-    "CategoryName": "River Adventures",
-    "ShortDescription": "Thrill yourself with white-water rafting and scenic river views.",
-    "AdventureCost": 120,
-    "BookingAvailability": "Available",
-    "Location": "Zambezi River, Zimbabwe",
-    "Duration": "Half Day",
-    "AdventureLevel": "High",
-    "IncludedItems": [
-      "Rafting gear",
-      "Professional instructors",
-      "Snacks and drinks"
+    "id": "5",
+    "adventureTitle": "Desert Oasis Trek",
+    "image": "desert_oasis_trek.jpg",
+    "categoryName": "Desert Treks",
+    "shortDescription": "Discover hidden oases and marvel at vast desert landscapes.",
+    "adventureCost": 350,
+    "bookingAvailability": true,
+    "location": "Sahara Desert, Morocco",
+    "duration": "4 days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Guide", "Camels", "Meals", "Tents"],
+    "ecoFriendlyFeatures": [
+      "Solar Cooking",
+      "Reusable Water Bottles",
+      "Zero-Plastic Policy"
     ],
-    "EcoFriendlyFeatures": [
-      "Eco-friendly rafting equipment",
-      "Local community employment",
-      "Waste-free adventure"
-    ],
-    "MaxGroupSize": 8,
-    "SpecialInstructions": [
-      "Participants must be strong swimmers",
-      "Avoid carrying loose items",
-      "Follow guide instructions"
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear sunscreen and sunglasses.",
+      "Stay hydrated.",
+      "Follow camel handling guidelines."
     ]
   },
   {
-    "AdventureTitle": "Desert Night Camp",
-    "Image": "https://i.ibb.co.com/XspV5TQ/Desert-Night-Camp.jpg",
-    "ID": "ECO006",
-    "CategoryName": "Desert Exploration",
-    "ShortDescription": "Unwind under the starlit skies of the desert with camel rides and cultural music.",
-    "AdventureCost": 170,
-    "BookingAvailability": "Available",
-    "Location": "Sahara Desert, Morocco",
-    "Duration": "1 Night",
-    "AdventureLevel": "Easy",
-    "IncludedItems": [
-      "Camel rides",
-      "Traditional meals",
-      "Tented accommodations"
+    "id": "6",
+    "adventureTitle": "Volcanic Ridge Trek",
+    "image": "volcanic_ridge_trek.jpg",
+    "categoryName": "Extreme Adventures",
+    "shortDescription": "Hike up active volcanic ridges for an unforgettable experience.",
+    "adventureCost": 400,
+    "bookingAvailability": true,
+    "location": "Mount Bromo, Indonesia",
+    "duration": "3 days",
+    "adventureLevel": "Challenging",
+    "includedItems": ["Guide", "Safety Gear", "Meals"],
+    "ecoFriendlyFeatures": [
+      "Emission Offsets",
+      "Local Food Sourcing",
+      "Minimalistic Camping"
     ],
-    "EcoFriendlyFeatures": [
-      "Solar lighting",
-      "Local cultural involvement",
-      "Eco-friendly water management"
-    ],
-    "MaxGroupSize": 15,
-    "SpecialInstructions": [
-      "Carry light jackets for the night",
-      "Avoid bright lights to preserve starlit view"
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Fitness required.",
+      "Carry masks for volcanic ash.",
+      "No drones allowed."
     ]
   },
   {
-    "AdventureTitle": "Mangrove Kayaking",
-    "Image": "https://i.ibb.co.com/F3hM32x/Mangrove-Kayaking.webp",
-    "ID": "ECO007",
-    "CategoryName": "Mangrove Forest Expeditions",
-    "ShortDescription": "Paddle through serene mangrove forests and discover diverse aquatic wildlife.",
-    "AdventureCost": 100,
-    "BookingAvailability": "Available",
-    "Location": "Everglades, Florida, USA",
-    "Duration": "Half Day",
-    "AdventureLevel": "Moderate",
-    "IncludedItems": ["Kayaks and paddles", "Guided tour", "Safety equipment"],
-    "EcoFriendlyFeatures": [
-      "Biodegradable supplies",
-      "Minimal impact paddling",
-      "Wildlife education"
+    "id": "7",
+    "adventureTitle": "Glacier Adventure Hike",
+    "image": "glacier_adventure_hike.jpg",
+    "categoryName": "Ice Adventures",
+    "shortDescription": "Traverse icy terrains and learn about glacial ecosystems.",
+    "adventureCost": 450,
+    "bookingAvailability": false,
+    "location": "Icelandic Glaciers, Iceland",
+    "duration": "3 days",
+    "adventureLevel": "Challenging",
+    "includedItems": ["Guide", "Crampons", "Meals", "First Aid Kit"],
+    "ecoFriendlyFeatures": [
+      "Renewable Energy Use",
+      "Glacier Conservation Talks",
+      "Environmentally Friendly Gear"
     ],
-    "MaxGroupSize": 10,
-    "SpecialInstructions": [
-      "Wear water-friendly clothing",
-      "Bring eco-safe sunscreen",
-      "Avoid loud noises"
+    "maxGroupSize": 6,
+    "specialInstructions": [
+      "Cold weather gear required.",
+      "Follow guide instructions strictly.",
+      "Photography spots identified."
     ]
   },
   {
-    "AdventureTitle": "Jungle Survival Course",
-    "Image": "https://i.ibb.co.com/1T9Nf3p/Jungle-Survival-Course.webp",
-    "ID": "ECO008",
-    "CategoryName": "Forest Expeditions",
-    "ShortDescription": "Learn essential survival skills in the depths of a jungle environment.",
-    "AdventureCost": 250,
-    "BookingAvailability": "Limited Slots",
-    "Location": "Borneo Rainforest, Malaysia",
-    "Duration": "3 Days, 2 Nights",
-    "AdventureLevel": "Advanced",
-    "IncludedItems": ["Survival expert guide", "Basic survival kit", "Meals"],
-    "EcoFriendlyFeatures": [
-      "Education on sustainable living",
-      "Eco-friendly tools",
-      "No-trace training"
+    "id": "8",
+    "adventureTitle": "Wildflower Valley Hike",
+    "image": "wildflower_valley_hike.jpg",
+    "categoryName": "Flora Expeditions",
+    "shortDescription": "Immerse yourself in a sea of vibrant wildflowers.",
+    "adventureCost": 150,
+    "bookingAvailability": true,
+    "location": "Valley of Flowers, India",
+    "duration": "2 days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Guide", "Snacks", "Camping Gear"],
+    "ecoFriendlyFeatures": [
+      "Plastic-Free Policy",
+      "Native Plant Awareness",
+      "Organic Meals"
     ],
-    "MaxGroupSize": 5,
-    "SpecialInstructions": [
-      "Be prepared for physical challenges",
-      "Carry lightweight essentials",
-      "Stay hydrated"
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "No plucking flowers.",
+      "Photography gear allowed.",
+      "Follow guide instructions."
     ]
   },
   {
-    "AdventureTitle": "Volcano Hiking Adventure",
-    "Image": "https://i.ibb.co.com/xg5bmJK/Volcano-Hiking-Adventure.webp",
-    "ID": "ECO009",
-    "CategoryName": "Mountain Treks",
-    "ShortDescription": "Hike up an active volcano and witness breathtaking lava flows.",
-    "AdventureCost": 200,
-    "BookingAvailability": "Limited Slots",
-    "Location": "Mount Etna, Italy",
-    "Duration": "1 Day",
-    "AdventureLevel": "Challenging",
-    "IncludedItems": ["Guided hike", "Safety gear", "Lunch"],
-    "EcoFriendlyFeatures": [
-      "Local conservation efforts",
-      "Waste-free policies",
-      "Solar-powered facilities"
+    "id": "9",
+    "adventureTitle": "Mountain Meadows Exploration",
+    "image": "mountain_meadows_exploration.jpg",
+    "categoryName": "Flora Expeditions",
+    "shortDescription": "Wander through expansive meadows surrounded by towering peaks.",
+    "adventureCost": 180,
+    "bookingAvailability": true,
+    "location": "Alps, Switzerland",
+    "duration": "1 day",
+    "adventureLevel": "Easy",
+    "includedItems": ["Guide", "Lunch", "Field Guide to Flora"],
+    "ecoFriendlyFeatures": [
+      "Wildflower Protection",
+      "Carbon Offset Program",
+      "Reusable Picnic Gear"
     ],
-    "MaxGroupSize": 8,
-    "SpecialInstructions": [
-      "Wear sturdy boots",
-      "Avoid carrying heavy backpacks",
-      "Stay with the group"
+    "maxGroupSize": 14,
+    "specialInstructions": [
+      "Wear comfortable hiking shoes.",
+      "Bring a hat for sun protection.",
+      "Avoid disturbing wildlife."
     ]
   },
   {
-    "AdventureTitle": "Glacial Ice Cave Exploration",
-    "Image": "https://i.ibb.co.com/jfBt646/Glacial-Ice-Cave-Exploration.jpg",
-    "ID": "ECO010",
-    "CategoryName": "Mountain Treks",
-    "ShortDescription": "Venture inside breathtaking ice caves and explore glacial formations.",
-    "AdventureCost": 250,
-    "BookingAvailability": "Limited Slots",
-    "Location": "Vatnajökull Glacier, Iceland",
-    "Duration": "1 Day",
-    "AdventureLevel": "Moderate",
-    "IncludedItems": ["Crampons", "Safety gear", "Expert guide"],
-    "EcoFriendlyFeatures": [
-      "Strict waste policies",
-      "Educational conservation tours",
-      "Minimal-impact equipment"
+    "id": "10",
+    "adventureTitle": "Cultural Mountain Trek",
+    "image": "cultural_mountain_trek.jpg",
+    "categoryName": "Cultural Journeys",
+    "shortDescription": "Experience local traditions and trek through mountain villages.",
+    "adventureCost": 280,
+    "bookingAvailability": true,
+    "location": "Himalayas, Nepal",
+    "duration": "5 days",
+    "adventureLevel": "Moderate",
+    "includedItems": [
+      "Guide",
+      "Meals",
+      "Cultural Performances",
+      "Accommodation"
     ],
-    "MaxGroupSize": 6,
-    "SpecialInstructions": [
-      "Dress warmly in layers",
-      "Avoid straying from paths",
-      "Bring a camera for photography"
+    "ecoFriendlyFeatures": [
+      "Supporting Local Communities",
+      "Eco-Friendly Accommodations",
+      "Waste Minimization"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Respect local customs and traditions.",
+      "Bring a sleeping bag for overnight stays.",
+      "No plastic waste."
     ]
   },
   {
-    "AdventureTitle": "Coastal Camping Retreat",
-    "Image": "https://i.ibb.co.com/yy7BMk0/Coastal-Camping-Retreat.jpg",
-    "ID": "ECO011",
-    "CategoryName": "Camping Retreats",
-    "ShortDescription": "Relax on pristine beaches with eco-friendly camping under the stars.",
-    "AdventureCost": 140,
-    "BookingAvailability": "Available",
-    "Location": "Big Sur, California, USA",
-    "Duration": "2 Days, 1 Night",
-    "AdventureLevel": "Easy",
-    "IncludedItems": [
-      "Camping gear",
-      "Local seafood dinner",
-      "Campfire supplies"
+    "id": "11",
+    "adventureTitle": "Coastal Cliff Trek",
+    "image": "coastal_cliff_trek.jpg",
+    "categoryName": "Coastal Treks",
+    "shortDescription": "Trek along dramatic cliffs with spectacular ocean views.",
+    "adventureCost": 220,
+    "bookingAvailability": true,
+    "location": "Cliffs of Moher, Ireland",
+    "duration": "2 days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Guide", "Meals", "Snacks", "Safety Gear"],
+    "ecoFriendlyFeatures": [
+      "Locally Sourced Meals",
+      "Eco-Friendly Transportation",
+      "Waste Sorting Practices"
     ],
-    "EcoFriendlyFeatures": [
-      "Zero waste practices",
-      "Reusable camping kits",
-      "Local conservation support"
-    ],
-    "MaxGroupSize": 12,
-    "SpecialInstructions": [
-      "Pack light beachwear",
-      "Avoid single-use plastics",
-      "Follow fire safety rules"
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Windproof clothing is recommended.",
+      "Stay on marked trails.",
+      "Respect the local wildlife."
     ]
   },
   {
-    "AdventureTitle": "Hot Air Balloon Safari",
-    "Image": "https://i.ibb.co.com/PzyVCv2/Hot-Air-Balloon-Safari.jpg",
-    "ID": "ECO012",
-    "CategoryName": "Wildlife Safaris",
-    "ShortDescription": "Soar above breathtaking landscapes and observe wildlife from the skies.",
-    "AdventureCost": 400,
-    "BookingAvailability": "Limited Slots",
-    "Location": "Serengeti, Tanzania",
-    "Duration": "Half Day",
-    "AdventureLevel": "Easy",
-    "IncludedItems": ["Balloon ride", "Champagne breakfast", "Wildlife guide"],
-    "EcoFriendlyFeatures": [
-      "Low-emission balloons",
-      "Support for wildlife reserves",
-      "Plastic-free packaging"
+    "id": "12",
+    "adventureTitle": "Northern Lights Expedition",
+    "image": "northern_lights_expedition.jpg",
+    "categoryName": "Extreme Adventures",
+    "shortDescription": "Chase the mesmerizing Northern Lights in a remote wilderness.",
+    "adventureCost": 500,
+    "bookingAvailability": false,
+    "location": "Lapland, Finland",
+    "duration": "4 days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Guide", "Warm Clothing", "Meals", "Accommodation"],
+    "ecoFriendlyFeatures": [
+      "Carbon Offsetting",
+      "Solar-Powered Cabins",
+      "Local Craftsmanship"
     ],
-    "MaxGroupSize": 8,
-    "SpecialInstructions": [
-      "Wear light layers for warmth",
-      "Arrive early for the sunrise view",
-      "Follow guide instructions"
-    ]
-  },
-  {
-    "AdventureTitle": "Wildflower Meadow Hike",
-    "Image": "https://i.ibb.co.com/FzcLBFM/Wildflower-Meadow-Hike.jpg",
-    "ID": "ECO013",
-    "CategoryName": "Forest Expeditions",
-    "ShortDescription": "Wander through vibrant wildflower meadows and learn about native plants.",
-    "AdventureCost": 80,
-    "BookingAvailability": "Available",
-    "Location": "Rocky Mountains, Colorado, USA",
-    "Duration": "1 Day",
-    "AdventureLevel": "Easy",
-    "IncludedItems": ["Guided tour", "Field guide booklet", "Snacks"],
-    "EcoFriendlyFeatures": [
-      "Plant preservation policies",
-      "Educational workshops",
-      "No-impact walking trails"
-    ],
-    "MaxGroupSize": 15,
-    "SpecialInstructions": [
-      "Wear sturdy shoes",
-      "Bring a field notebook",
-      "Avoid picking flowers"
-    ]
-  },
-  {
-    "AdventureTitle": "Bioluminescent Bay Kayaking",
-    "Image": "https://i.ibb.co.com/4mLDbtL/Bioluminescent-Bay-Kayaking.jpg",
-    "ID": "ECO014",
-    "CategoryName": "River Adventures",
-    "ShortDescription": "Paddle through glowing waters in a magical bioluminescent bay.",
-    "AdventureCost": 110,
-    "BookingAvailability": "Available",
-    "Location": "Mosquito Bay, Puerto Rico",
-    "Duration": "Evening Tour",
-    "AdventureLevel": "Moderate",
-    "IncludedItems": [
-      "Kayaks and paddles",
-      "Safety gear",
-      "Professional guide"
-    ],
-    "EcoFriendlyFeatures": [
-      "No-impact paddling",
-      "Biodegradable supplies",
-      "Strict light pollution controls"
-    ],
-    "MaxGroupSize": 8,
-    "SpecialInstructions": [
-      "Avoid using flashlights",
-      "Wear water-friendly clothing",
-      "Bring eco-safe insect repellent"
-    ]
-  },
-  {
-    "AdventureTitle": "Arctic Wildlife Expedition",
-    "Image": "https://i.ibb.co.com/DYp3kp6/Arctic-Wildlife-Expedition.webp",
-    "ID": "ECO015",
-    "CategoryName": "Wildlife Safaris",
-    "ShortDescription": "Observe polar bears and other Arctic wildlife in their natural habitat.",
-    "AdventureCost": 500,
-    "BookingAvailability": "Limited Slots",
-    "Location": "Svalbard Archipelago, Norway",
-    "Duration": "5 Days, 4 Nights",
-    "AdventureLevel": "Advanced",
-    "IncludedItems": [
-      "Experienced Arctic guide",
-      "Cruise accommodations",
-      "Meals"
-    ],
-    "EcoFriendlyFeatures": [
-      "Carbon-neutral travel",
-      "Wildlife conservation funding",
-      "Solar-powered ships"
-    ],
-    "MaxGroupSize": 10,
-    "SpecialInstructions": [
-      "Pack heavy-duty thermal clothing",
-      "Carry binoculars",
-      "Follow safety briefings carefully"
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Dress in layers for warmth.",
+      "Photographic equipment permitted.",
+      "Follow wildlife safety guidelines."
     ]
   }
 ]
