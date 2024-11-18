@@ -6,11 +6,13 @@ import UpdateProfile from "../pages/UpdateProfile";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
 import AdventureDetails from "../components/AdventureDetails";
+import Error from "../pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Mainlayout></Mainlayout>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -43,7 +45,7 @@ const router = createBrowserRouter([
           const adventure = adventures.find(adventure => adventure.id === params.id)
           return adventure
         }
-      }
+      },
     ]
   },
 ]);
