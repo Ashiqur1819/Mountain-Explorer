@@ -10,7 +10,7 @@ const Adventure = ({adventure}) => {
           className="w-full h-[200px] object-cover rounded-lg"
           alt=""
         />
-        <h2 className="text-xl font-bold mt-3">{adventureTitle}</h2>
+        <h2 className="text-xl font-bold mt-3 text-teal-500">{adventureTitle}</h2>
         <p className="text-lg font-medium mt-3">
           Features:
           <span className="text-base font-normal text-gray-600">
@@ -19,7 +19,7 @@ const Adventure = ({adventure}) => {
             ))}
           </span>
         </p>
-        <button className="mt-6 w-full py-2 px-6 text-lg rounded-lg bg-teal-500 text-white cursor-pointer font-semibold hover:bg-teal-600">
+        <button className="mt-6 w-full py-2 px-6 text-lg rounded-lg bg-purple-500 text-white cursor-pointer font-semibold hover:bg-purple-600">
           <Link
             to={`/adventureDetails/${id}`}>
             Explore Now

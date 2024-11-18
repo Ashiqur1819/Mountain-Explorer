@@ -112,7 +112,7 @@ const AdventureDetails = () => {
           </div>
         </div>
         <button className="mt-12 mb-2 mx-auto  w-full">
-          <Link className="py-2 px-6 text-lg rounded-lg bg-teal-500 text-white cursor-pointer font-semibold hover:bg-teal-600">
+          <Link className="py-2 px-6 text-lg rounded-lg bg-purple-500 text-white cursor-pointer font-semibold hover:bg-purple-600">
             Talk With Expert
           </Link>
         </button>
