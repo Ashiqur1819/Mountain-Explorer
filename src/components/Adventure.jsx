@@ -10,12 +10,12 @@ const Adventure = ({adventure}) => {
           className="w-full h-[200px] object-cover rounded-lg"
           alt=""
         />
-        <h2 className="text-xl font-semibold mt-3">{adventureTitle}</h2>
+        <h2 className="text-xl font-bold mt-3">{adventureTitle}</h2>
         <p className="text-lg font-medium mt-3">
           Features:
           <span className="text-base font-normal text-gray-600">
-            {ecoFriendlyFeatures.map((feature) => (
-              <li>{feature}</li>
+            {ecoFriendlyFeatures.map((feature, index) => (
+              <li key={index}>{feature}</li>
             ))}
           </span>
         </p>
