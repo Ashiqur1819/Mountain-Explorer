@@ -7,27 +7,37 @@ const googleProvider = new GoogleAuthProvider()
 
 const AuthProvider = ({children}) => {
 
-    const [user, setUser] = useState(null)
+    const [user, setUser] = useState('')
 
     // Sign Up
     const createNewUser = (email, password) => {
+        setUser('')
        return createUserWithEmailAndPassword(auth, email, password)
     }
 
     // Log In
     const userLogin = (email, password) => {
+        setUser('')
         return signInWithEmailAndPassword(auth, email, password);
     }
 
     // Google Log In
     const loginWithGoogle = () => {
+        setUser('')
        return signInWithPopup(auth, googleProvider);
     }
 
     // Log Out
-    const logOut = () => {
-        signOut(auth)
-    }
+       const logOut = () => {
+         signOut(auth)
+           .then((result) => {
+             setUser(result.user);
+             console.log(result.user);
+           })
+           .catch((error) => {
+             console.log(error);
+           });
+       };
 
     // Update User Profile
     const updateUserProfile = (updatedData) => {
@@ -37,7 +47,7 @@ const AuthProvider = ({children}) => {
     // On State change
     useEffect( () => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
-
+            setUser(currentUser)
         })
 
         return() => {
@@ -50,6 +60,10 @@ const AuthProvider = ({children}) => {
       createNewUser,
       userLogin,
       loginWithGoogle,
+      user,
+      setUser,
+      updateUserProfile,
+      logOut,
     };
 
     return <AuthContext.Provider value={authInfo}>
