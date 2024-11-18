@@ -5,7 +5,7 @@ import { AuthContext } from '../provider/AuthProvider';
 
 const SignUp = () => {
 
-    const { createNewUser } = useContext(AuthContext);
+    const { createNewUser, loginWithGoogle } = useContext(AuthContext);
 
     const handleSignUp = (e) => {
       e.preventDefault();
@@ -26,19 +26,29 @@ const SignUp = () => {
      
     }
 
+    const handleLoginwithGoogle = () => {
+      loginWithGoogle()
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+
      return (
        <div className="card w-full mx-auto max-w-md shrink-0 shadow-2xl mt-12 border">
          <h2 className="text-2xl font-bold text-center mt-6 text-purple-600">
            Create a New Account
          </h2>
-         <form onSubmit={handleSignUp} className="card-body">
+         <form onSubmit={handleSignUp} className="card-body px-8 py-0">
            <div className="form-control">
              <label className="label">
                <span className="label-text text-base font-medium">Name:</span>
              </label>
              <input
                type="text"
-               name='name'
+               name="name"
                placeholder="Enter your name"
                className="input input-bordered"
                required
@@ -46,11 +56,13 @@ const SignUp = () => {
            </div>
            <div className="form-control">
              <label className="label">
-               <span className="label-text text-base font-medium">Photo URL:</span>
+               <span className="label-text text-base font-medium">
+                 Photo URL:
+               </span>
              </label>
              <input
                type="text"
-               name='photo_url'
+               name="photo_url"
                placeholder="Enter your photo url"
                className="input input-bordered"
                required
@@ -62,7 +74,7 @@ const SignUp = () => {
              </label>
              <input
                type="email"
-               name='email'
+               name="email"
                placeholder="Enter your email"
                className="input input-bordered"
                required
@@ -76,7 +88,7 @@ const SignUp = () => {
              </label>
              <input
                type="password"
-               name='password'
+               name="password"
                placeholder="Enter your password"
                className="input input-bordered"
                required
@@ -87,9 +99,24 @@ const SignUp = () => {
                Sign Up
              </button>
            </div>
-           <p className="text-center mt-1">Already have an account? <Link to="/login" className="underline text-purple-600">Log In</Link>
+           <p className="text-center mt-1">
+             Already have an account?{" "}
+             <Link to="/login" className="underline text-purple-600">
+               Log In
+             </Link>
            </p>
          </form>
+         <div className='mb-8 px-8'>
+           <h4 className="text-center font-semibold text-lg my-1 text-purple-600">
+             Or
+           </h4>
+           <button
+             onClick={handleLoginwithGoogle}
+             className="py-2 px-6 w-full text-lg rounded-lg border border-teal-500  text-teal-500 cursor-pointer font-semibold hover:bg-base-200"
+           >
+             Log In with Google
+           </button>
+         </div>
        </div>
      );
 };
