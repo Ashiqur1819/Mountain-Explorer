@@ -12,10 +12,10 @@ const AboutUs = () => {
             We Are the Bridge to Your Ridge Trek Dreams.
           </h2>
           <p className="text-gray-600 mt-8">
-            Ultricies purus dapibus senectus netus nibh molestie nisi litora est
-            malesuada. Mattis quis nisl ex feugiat scelerisque. Vitae torquent
-            fusce faucibus at tempor nullam commodo ultrices scelerisque
-            blandit.
+            Embark on unforgettable adventures with us as your trusted guide.
+            From thrilling treks to serene nature explorations, we connect you
+            to the peaks and paths you’ve always dreamed of conquering. Let us
+            turn your trekking aspirations into reality!
           </p>
           <div className="divider"></div>
           <div className="md:flex items-center justify-between py-3 lg:py-6 space-y-2">

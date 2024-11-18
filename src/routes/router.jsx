@@ -1,4 +1,4 @@
-import { createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter, useLocation} from "react-router-dom";
 import Mainlayout from "../layouts/Mainlayout";
 import Home from "../pages/Home";
 import MyProfile from "../pages/MyProfile";
@@ -7,6 +7,8 @@ import Login from "../components/Login";
 import SignUp from "../components/SignUp";
 import AdventureDetails from "../components/AdventureDetails";
 import Error from "../pages/Error";
+import PrivateRoute from "./PrivateRoute";
+
 
 const router = createBrowserRouter([
   {
@@ -17,36 +19,42 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("/adventures.json")
+        loader: () => fetch("/adventures.json"),
       },
       {
         path: "/my_profile",
-        element: <MyProfile></MyProfile>
+        element: <MyProfile></MyProfile>,
       },
       {
         path: "/update_profile",
-        element: <UpdateProfile></UpdateProfile>
+        element: <UpdateProfile></UpdateProfile>,
       },
       {
         path: "/login",
-        element: <Login></Login>
+        element: <Login></Login>,
       },
       {
         path: "/signup",
-        element: <SignUp></SignUp>
+        element: <SignUp></SignUp>,
       },
       {
-        path: '/adventureDetails/:id',
-        element: <AdventureDetails></AdventureDetails>,
-        loader: async({params}) => {
+        path: "/adventureDetails/:id",
+        element: (
+          <PrivateRoute>
+            <AdventureDetails></AdventureDetails>
+          </PrivateRoute>
+        ),
+        loader: async ({ params }) => {
           const res = await fetch("adventures.json");
-          const adventures = await res.json()
-          
-          const adventure = adventures.find(adventure => adventure.id === params.id)
-          return adventure
-        }
+          const adventures = await res.json();
+
+          const adventure = adventures.find(
+            (adventure) => adventure.id === params.id
+          );
+          return adventure;
+        },
       },
-    ]
+    ],
   },
 ]);
 

@@ -1,3 +1,5 @@
+import { FaFacebook, FaGithub, FaInstagramSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -7,17 +9,27 @@ const Footer = () => {
           <div className="footer text-neutral-content p-10">
             <nav>
               <h6 className="footer-title">Services</h6>
-              <a className="link link-hover">Branding</a>
-              <a className="link link-hover">Design</a>
-              <a className="link link-hover">Marketing</a>
-              <a className="link link-hover">Advertisement</a>
+              <a className="link link-hover">Guided Trekking Tours</a>
+              <a className="link link-hover">Custom Trekking Packages</a>
+              <a className="link link-hover">Camping Gear Rentals</a>
+              <a className="link link-hover">Adventure Activities</a>
+              <a className="link link-hover">Wildlife and Nature Tours</a>
+              <a className="link link-hover">Corporate and Group Treks</a>
             </nav>
             <nav>
-              <h6 className="footer-title">Company</h6>
-              <a className="link link-hover">About us</a>
-              <a className="link link-hover">Contact</a>
-              <a className="link link-hover">Jobs</a>
-              <a className="link link-hover">Press kit</a>
+              <h6 className="footer-title">Quick Links</h6>
+              <Link to="/" className="link link-hover">
+                Home
+              </Link>
+              <Link to="/my_profile" className="link link-hover">
+                My Profile
+              </Link>
+              <Link to="/update_profile" className="link link-hover">
+                Update Profile
+              </Link>
+              <Link to="/login" className="link link-hover">
+                Log In
+              </Link>
             </nav>
             <nav>
               <h6 className="footer-title">Legal</h6>
@@ -27,6 +39,26 @@ const Footer = () => {
             </nav>
           </div>
         </div>
+        <nav>
+          <div className="flex items-center gap-6 justify-center text-gray-300 py-3">
+            <a
+              className="text-2xl"
+              href="https://www.facebook.com/Aashiq1819"
+              target="_blank"
+            >
+              <FaFacebook></FaFacebook>
+            </a>
+            <a
+              className="text-2xl"
+              href="https://www.instagram.com/aashiq_1918/"
+            >
+              <FaInstagramSquare></FaInstagramSquare>
+            </a>
+            <a className="text-2xl" href="https://github.com/Ashiqur1819">
+              <FaGithub></FaGithub>
+            </a>
+          </div>
+        </nav>
       </footer>
     );
 };
