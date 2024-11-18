@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Adventure = ({adventure}) => {
-    const { adventureTitle, image, ecoFriendlyFeatures } = adventure;
+    const {id, adventureTitle, image, ecoFriendlyFeatures } = adventure;
     return (
       <div className="border p-6 rounded-lg">
         <img
@@ -21,7 +21,7 @@ const Adventure = ({adventure}) => {
         </p>
         <button className="mt-6 w-full py-2 px-6 text-lg rounded-lg bg-teal-500 text-white cursor-pointer font-semibold hover:bg-teal-600">
           <Link
-            to="/login">
+            to={`/adventureDetails/${id}`}>
             Explore Now
           </Link>
         </button>

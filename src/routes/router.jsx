@@ -5,6 +5,7 @@ import MyProfile from "../pages/MyProfile";
 import UpdateProfile from "../pages/UpdateProfile";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
+import AdventureDetails from "../components/AdventureDetails";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,17 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>
+      },
+      {
+        path: '/adventureDetails/:id',
+        element: <AdventureDetails></AdventureDetails>,
+        loader: async({params}) => {
+          const res = await fetch("adventures.json");
+          const adventures = await res.json()
+          
+          const adventure = adventures.find(adventure => adventure.id === params.id)
+          return adventure
+        }
       }
     ]
   },
