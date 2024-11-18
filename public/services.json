@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co.com/3f561pb/Guided-Trekking.png",
+    "service_name": "Guided Trekking Tours",
+    "description": "Expert-led treks tailored to different difficulty levels."
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co.com/zbZHQ0m/Custom-Trekking.png",
+    "service_name": "Custom Trekking Packages",
+    "description": "Personalized itineraries based on client preferences."
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co.com/JKy2Nxf/Camping-Gear-Rentals.png",
+    "service_name": "Camping Gear Rentals",
+    "description": "High-quality equipment for a seamless outdoor experience."
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co.com/rbdqBjx/Adventure-Activities.png",
+    "service_name": "Adventure Activities",
+    "description": "Exciting options like rock climbing, zip-lining, and more."
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co.com/mSCS8DJ/Wildlife-and-Nature-Tours.png",
+    "service_name": "Wildlife and Nature Tours",
+    "description": "Explore unique flora and fauna during treks."
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co.com/FhCtkVb/Corporate-and-Group-Treks.png",
+    "service_name": "Corporate and Group Treks",
+    "description": "Organized team-building and group trekking events."
+  }
+]

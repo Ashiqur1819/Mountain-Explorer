@@ -23,7 +23,7 @@ const AdventureDetails = () => {
 
     return (
       <div className="mt-6 border p-6 rounded-lg shadow-lg">
-        <div className="flex gap-12 items-center ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
           <div>
             <img
               src={image}
