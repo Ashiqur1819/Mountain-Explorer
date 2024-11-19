@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import logo from "../assets/logo.png"
 
 
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
             <div tabIndex={0} role="button" className="lg:hidden mr-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-7 w-7"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -52,7 +53,8 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="text-lg md:text-2xl font-bold">Mountain Explorer</a>
+          <a className="text-lg md:text-2xl font-bold hidden md:inline-block">Mountain Explorer</a>
+          <img src={logo} className="w-16 md:hidden" alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px- gap-6 text-base ">{links}</ul>
@@ -82,7 +84,7 @@ const Navbar = () => {
           ) : (
             <button>
               <Link
-                to="/auth/login"
+                to="/login"
                 className="py-2 px-6 md:text-lg rounded-lg bg-teal-500 text-white cursor-pointer font-semibold hover:bg-teal-600"
               >
                 Log In

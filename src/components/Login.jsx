@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 
 const Login = () => {
@@ -20,17 +21,17 @@ const Login = () => {
     const password = formData.get("password");
 
     if (password.length < 6) {
-      alert("Password must be at least 6 characters long!");
+      toast.warning("Password must be at least 6 characters long!");
       return;
     }
 
     if (!/[A-Z]/.test(password)) {
-      alert("Password must contain at least one uppercase letter!");
+      toast.warning("Password must contain at least one uppercase letter!");
       return;
     }
 
     if (!/[a-z]/.test(password)) {
-      alert("Password must contain at least one lowercase letter!");
+      toast.warning("Password must contain at least one lowercase letter!");
       return;
     }
 
@@ -38,10 +39,11 @@ const Login = () => {
         .then((result) => {
           console.log(result.user);
           setUser(result.user)
+          toast.success(` Login successful! Welcome back!`);
           navigate(location?.state ? location.state : "/")
         })
-        .catch((error) => {
-          console.log(error.message);
+        .catch(() => {
+         toast.error("Invalid login credentials. Please try again.")
         });
 
   }
@@ -51,10 +53,13 @@ const Login = () => {
          .then((result) => {
            console.log(result.user);
            setUser(result.user)
+                   toast.success(
+                     `Google login successful!`
+                   );
             navigate(location?.state ? location.state : "/");
          })
-         .catch((error) => {
-           console.log(error.message);
+         .catch(() => {
+           toast.error("Google login failed! Please try again.");
          });
      };
 
@@ -122,7 +127,7 @@ const Login = () => {
         </div>
         <p className="text-center mt-3 mb-6">
           Haven't any account?{" "}
-          <Link to="/auth/signup" className="underline text-purple-600">
+          <Link to="/signup" className="underline text-purple-600">
             Sign Up
           </Link>
         </p>

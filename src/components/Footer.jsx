@@ -50,11 +50,11 @@ const Footer = () => {
             </a>
             <a
               className="text-2xl"
-              href="https://www.instagram.com/aashiq_1918/"
+              href="https://www.instagram.com/aashiq_1918/" target="_blank"
             >
               <FaInstagramSquare></FaInstagramSquare>
             </a>
-            <a className="text-2xl" href="https://github.com/Ashiqur1819">
+            <a className="text-2xl" href="https://github.com/Ashiqur1819" target="_blank">
               <FaGithub></FaGithub>
             </a>
           </div>

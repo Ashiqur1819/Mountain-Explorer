@@ -1,6 +1,9 @@
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
 import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { toast } from "react-toastify";
+
+
 
 export const AuthContext = createContext()
 const googleProvider = new GoogleAuthProvider()
@@ -32,12 +35,10 @@ const AuthProvider = ({children}) => {
        const logOut = () => {
          signOut(auth)
            .then((result) => {
+               toast.success("You've successfully logged out. See you soon!");
              setUser(result.user);
             setLoading(true)
            })
-           .catch((error) => {
-             console.log(error);
-           });
        };
 
     // Update User Profile
@@ -69,9 +70,11 @@ const AuthProvider = ({children}) => {
       loading,
     };
 
-    return <AuthContext.Provider value={authInfo}>
+    return (
+      <AuthContext.Provider value={authInfo}>
         {children}
-    </AuthContext.Provider>
+      </AuthContext.Provider>
+    );
 };
 
 export default AuthProvider;

@@ -2,6 +2,9 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
 import { FaGoogle } from 'react-icons/fa';
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 const SignUp = () => {
@@ -20,44 +23,52 @@ const SignUp = () => {
       const password = formData.get("password");
 
       if (password.length < 6) {
-        alert("Password must be at least 6 characters long!");
+        toast.warning("Password must be at least 6 characters long!");
         return;
       }
 
       if (!/[A-Z]/.test(password)) {
-        alert("Password must contain at least one uppercase letter!");
+        toast.warning("Password must contain at least one uppercase letter!");
         return;
       }
 
       if (!/[a-z]/.test(password)) {
-        alert("Password must contain at least one lowercase letter!");
+        toast.warning("Password must contain at least one lowercase letter!");
         return;
       }
 
       createNewUser(email, password)
         .then((result) => {
           setUser(result.user);
+          toast.success(`Sign-up successful!`);
           navigate("/");
-          console.log(result);
         })
-        .catch((error) => console.log(error));
+        .catch(() =>
+          toast.error(
+            "Oops! We couldn't create your account. Please check your details and try again."
+          )
+        );
     }
 
         const handleLoginwithGoogle = () => {
           loginWithGoogle()
             .then((result) => {
-              console.log(result.user);
               setUser(result.user);
+              toast.success(
+                `Google login successful!`
+              );
               navigate("/");
 
-              updateUserProfile({ displayName: name, photoURL: photo }).then(
-                () => {
-                  navigate("/");
-                }
-              );
+              // updateUserProfile({ displayName: name, photoURL: photo }).then(
+              //   () => {
+              //     navigate("/");
+              //   }
+              // );
             })
-            .catch((error) => {
-              console.log(error.message);
+            .catch(() => {
+              toast.error(
+                " Google login failed. Please check your connection and try again."
+              );
             });
         };
 
