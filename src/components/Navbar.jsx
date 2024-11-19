@@ -53,7 +53,9 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="text-lg md:text-2xl font-bold hidden md:inline-block">Mountain Explorer</a>
+          <a className="text-lg md:text-2xl font-bold hidden md:inline-block">
+            Mountain Explorer
+          </a>
           <img src={logo} className="w-16 md:hidden" alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -75,7 +77,7 @@ const Navbar = () => {
               <button onClick={logOut}>
                 <Link
                   to="/"
-                  className="py-2 px-6 md:text-lg rounded-lg bg-teal-500 text-white cursor-pointer font-semibold hover:bg-teal-600"
+                  className="py-2 px-6 md:text-lg rounded-lg bg-purple-700 text-white cursor-pointer font-semibold hover:bg-purple-600"
                 >
                   Log Out
                 </Link>
@@ -85,7 +87,7 @@ const Navbar = () => {
             <button>
               <Link
                 to="/login"
-                className="py-2 px-6 md:text-lg rounded-lg bg-teal-500 text-white cursor-pointer font-semibold hover:bg-teal-600"
+                className="py-2 px-6 md:text-lg rounded-lg bg-purple-700 text-white cursor-pointer font-semibold hover:bg-purple-600"
               >
                 Log In
               </Link>

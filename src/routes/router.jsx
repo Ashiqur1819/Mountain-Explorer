@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import AdventureDetails from "../components/AdventureDetails";
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,14 +51,14 @@ const router = createBrowserRouter([
           return adventure;
         },
       },
-          {
-            path: "/login",
-            element: <Login></Login>,
-          },
-          {
-            path: "/signup",
-            element: <SignUp></SignUp>,
-          },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/signup",
+        element: <SignUp></SignUp>,
+      },
     ],
   },
 ]);

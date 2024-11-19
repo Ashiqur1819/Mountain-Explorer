@@ -13,13 +13,13 @@ const MyProfile = () => {
           </figure>
           <h2 className="text-4xl font-bold">
             Welcome <br />
-            <span className="text-teal-500">{user?.displayName}</span>
+            <span className="text-purple-700">{user?.displayName}</span>
           </h2>
         </div>
         <form className="mt-6">
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-xl font-medium text-purple-800">
+              <span className="label-text text-xl font-medium text-teal-600">
                 Name:
               </span>
             </label>
@@ -33,7 +33,7 @@ const MyProfile = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-xl font-medium text-purple-800">
+              <span className="label-text text-xl font-medium text-teal-600">
                 Photo URL:
               </span>
             </label>
@@ -47,7 +47,7 @@ const MyProfile = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-xl font-medium text-purple-800">
+              <span className="label-text text-xl font-medium text-teal-600">
                 Email:
               </span>
             </label>
@@ -60,7 +60,7 @@ const MyProfile = () => {
             />
           </div>
           <div className="form-control mt-6">
-            <button className="py-2 px-6 text-lg rounded-lg bg-teal-500  text-white cursor-pointer font-semibold hover:bg-teal-600 ">
+            <button className="py-2 px-6 text-lg rounded-lg bg-purple-700 text-white cursor-pointer font-semibold hover:bg-purple-600 ">
               <Link to="/update_profile"> Update Your Profile</Link>
             </button>
           </div>
