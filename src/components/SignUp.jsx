@@ -49,6 +49,12 @@ const SignUp = () => {
               console.log(result.user);
               setUser(result.user);
               navigate("/");
+
+              updateUserProfile({ displayName: name, photoURL: photo }).then(
+                () => {
+                  navigate("/");
+                }
+              );
             })
             .catch((error) => {
               console.log(error.message);
