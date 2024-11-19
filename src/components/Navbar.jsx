@@ -7,11 +7,23 @@ const Navbar = () => {
 
   const { user, logOut } = useContext(AuthContext);
   
-    const links = <div className="lg:flex items-center gap-6">
-        <li className=""><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/my_profile">My Profile</NavLink></li>
-        <li><NavLink to="/update_profile">Update Profile</NavLink></li>
-    </div>
+    const links = (
+      <div className="lg:flex items-center gap-6">
+        <li className="">
+          <NavLink to="/">Home</NavLink>
+        </li>
+        {user && user?.email && (
+          <li>
+            <NavLink to="/my_profile">My Profile</NavLink>
+          </li>
+        )}
+        {user && user?.email && (
+          <li>
+            <NavLink to="/update_profile">Update Profile</NavLink>
+          </li>
+        )}
+      </div>
+    );
 
     return (
       <div className="navbar px-3 md:px-6 lg:px-12 py-6">

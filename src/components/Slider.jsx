@@ -11,7 +11,7 @@ const Slider = () => {
             id="slide1"
             className="carousel-item relative w-full h-[400px] md:h-[600px]"
           >
-            <img src={slide1} className="w-full object-cover" />
+            <img src={slide2} className="w-full object-cover" />
             <div
               style={{ backgroundColor: "rgba(0, 0, 0, .5)" }}
               className="absolute  w-full h-[400px] md:h-[600px]"
@@ -39,7 +39,7 @@ const Slider = () => {
             id="slide2"
             className="carousel-item relative w-full  h-[400px] md:h-[600px]"
           >
-            <img src={slide2} className="w-full object-cover" />
+            <img src={slide1} className="w-full object-cover" />
             <div
               style={{ backgroundColor: "rgba(0, 0, 0, .5)" }}
               className="absolute  w-full h-[400px] md:h-[600px]"
