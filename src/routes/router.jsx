@@ -8,6 +8,7 @@ import SignUp from "../components/SignUp";
 import AdventureDetails from "../components/AdventureDetails";
 import Error from "../pages/Error";
 import PrivateRoute from "./PrivateRoute";
+import AuthLayout from "../layouts/AuthLayout";
 
 
 const router = createBrowserRouter([
@@ -30,29 +31,35 @@ const router = createBrowserRouter([
         element: <UpdateProfile></UpdateProfile>,
       },
       {
-        path: "/login",
+    path: "/adventureDetails/:id",
+    element: (
+      <PrivateRoute>
+        <AdventureDetails></AdventureDetails>
+      </PrivateRoute>
+    ),
+    loader: async ({ params }) => {
+      const res = await fetch("adventures.json");
+      const adventures = await res.json();
+
+      const adventure = adventures.find(
+        (adventure) => adventure.id === params.id
+      );
+      return adventure;
+    },
+  },
+    ],
+  },
+  {
+    path: "/auth",
+    element: <AuthLayout></AuthLayout>,
+    children: [
+      {
+        path: "/auth/login",
         element: <Login></Login>,
       },
       {
-        path: "/signup",
+        path: "/auth/signup",
         element: <SignUp></SignUp>,
-      },
-      {
-        path: "/adventureDetails/:id",
-        element: (
-          <PrivateRoute>
-            <AdventureDetails></AdventureDetails>
-          </PrivateRoute>
-        ),
-        loader: async ({ params }) => {
-          const res = await fetch("adventures.json");
-          const adventures = await res.json();
-
-          const adventure = adventures.find(
-            (adventure) => adventure.id === params.id
-          );
-          return adventure;
-        },
       },
     ],
   },

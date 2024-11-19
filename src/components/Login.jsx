@@ -1,15 +1,16 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 
 
 const Login = () => {
 
-  const { userLogin, loginWithGoogle, setUser, updateUserProfile } =
+  const { userLogin, loginWithGoogle, setUser } =
     useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false)
   const navigate = useNavigate()
+  const location = useLocation()
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -37,6 +38,7 @@ const Login = () => {
         .then((result) => {
           console.log(result.user);
           setUser(result.user)
+          navigate(location?.state ? location.state : "/")
         })
         .catch((error) => {
           console.log(error.message);
@@ -49,7 +51,7 @@ const Login = () => {
          .then((result) => {
            console.log(result.user);
            setUser(result.user)
-           navigate("/")
+            navigate(location?.state ? location.state : "/");
          })
          .catch((error) => {
            console.log(error.message);
@@ -120,7 +122,7 @@ const Login = () => {
         </div>
         <p className="text-center mt-3 mb-6">
           Haven't any account?{" "}
-          <Link to="/signup" className="underline text-purple-600">
+          <Link to="/auth/signup" className="underline text-purple-600">
             Sign Up
           </Link>
         </p>
