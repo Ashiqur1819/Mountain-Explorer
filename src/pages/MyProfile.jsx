@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 
 const MyProfile = () => {
     const {user} = useContext(AuthContext)
+    console.log(user.displayName)
     return (
       <div className="max-w-2xl mx-auto  p-12 rounded-lg shadow-lg mt-12 bg-gray-100">
         <div className="flex items-center gap-6">
           <figure>
-            <img src={user?.photoURL} className="rounded-full" alt="" />
+            <img src={user?.photoURL} className="w-24 rounded-full" alt="" />
           </figure>
           <h2 className="text-4xl font-bold">
             Welcome <br />

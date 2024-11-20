@@ -33,7 +33,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/update_profile",
-        element: <UpdateProfile></UpdateProfile>,
+        element: (
+          <PrivateRoute>
+            <UpdateProfile></UpdateProfile>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/adventureDetails/:id",

@@ -42,6 +42,14 @@ const SignUp = () => {
           setUser(result.user);
           toast.success(`Sign-up successful!`);
           navigate("/");
+
+          
+              updateUserProfile({ displayName: name, photoURL: photo }).then(
+                () => {
+                  console.log("fdfdj")
+                  navigate("/");
+                }
+              );
         })
         .catch(() =>
           toast.error(
@@ -59,11 +67,6 @@ const SignUp = () => {
               );
               navigate("/");
 
-              // updateUserProfile({ displayName: name, photoURL: photo }).then(
-              //   () => {
-              //     navigate("/");
-              //   }
-              // );
             })
             .catch(() => {
               toast.error(
