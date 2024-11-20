@@ -8,6 +8,7 @@ import SignUp from "../components/SignUp";
 import Error from "../pages/Error";
 import PrivateRoute from "./PrivateRoute";
 import AdventureDetails from "../components/AdventureDetails";
+import ForgetPassword from "../components/ForgetPassword";
 
 
 
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/forget_password",
+        element: <ForgetPassword></ForgetPassword>,
       },
     ],
   },

@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 
 const Login = () => {
 
-  const { userLogin, loginWithGoogle, setUser } =
+  const { userLogin, loginWithGoogle, setUser, email, setEmail } =
     useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false)
   const navigate = useNavigate()
@@ -77,6 +77,8 @@ const Login = () => {
             <input
               type="email"
               name="email"
+              
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
               className="input input-bordered"
               required
@@ -102,9 +104,13 @@ const Login = () => {
               {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
             </button>
             <label className="label">
-              <a href="#" className="label-text-alt link link-hover text-sm">
+              <Link
+                to="/forget_password"
+                href="#"
+                className="label-text-alt link link-hover text-sm"
+              >
                 Forgot password?
-              </a>
+              </Link>
             </label>
           </div>
           <div className="form-control mt-6">

@@ -9,9 +9,9 @@ const Home = () => {
     return (
         <div>
             <Slider></Slider>
-            <Services></Services>
-            <AboutUs></AboutUs>
             <Adventures></Adventures>
+            <AboutUs></AboutUs>
+            <Services></Services>
         </div>
     );
 };

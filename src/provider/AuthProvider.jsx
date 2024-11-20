@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 
 
@@ -12,6 +12,7 @@ const AuthProvider = ({children}) => {
 
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
+     const [email, setEmail] = useState("");
 
     // Sign Up
     const createNewUser = (email, password) => {
@@ -41,6 +42,12 @@ const AuthProvider = ({children}) => {
            })
        };
 
+      // //  Forget password
+      const forgetPassword = (email) => {
+          setLoading(true);
+        return sendPasswordResetEmail(auth, email);
+      }
+
     // Update User Profile
     const updateUserProfile = (updatedData) => {
         return updateProfile(auth.currentUser, updatedData)
@@ -68,6 +75,9 @@ const AuthProvider = ({children}) => {
       updateUserProfile,
       logOut,
       loading,
+      email,
+      setEmail,
+      forgetPassword,
     };
 
     return (
