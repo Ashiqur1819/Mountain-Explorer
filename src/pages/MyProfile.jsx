@@ -8,11 +8,11 @@ const MyProfile = () => {
     console.log(user.displayName)
     return (
       <div className="max-w-2xl mx-auto  p-12 rounded-lg shadow-lg mt-12 bg-gray-100">
-        <div className="flex items-center gap-6">
+        <div className="md:flex items-center gap-6">
           <figure>
             <img src={user?.photoURL} className="w-24 rounded-full" alt="" />
           </figure>
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-3xl font-bold mt-3 md:mt-0">
             Welcome <br />
             <span className="text-purple-700">{user?.displayName}</span>
           </h2>

@@ -97,7 +97,7 @@ const Login = () => {
               className="input input-bordered"
               required
             />
-            <button
+            <button type="button"
               onClick={() => setShowPassword(!showPassword)}
               className="absolute right-4 top-[57px]"
             >
