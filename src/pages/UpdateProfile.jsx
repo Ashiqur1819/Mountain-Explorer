@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 
 const UpdateProfile = () => {
 
     const {updateUserProfile} = useContext(AuthContext)
+    const navigate = useNavigate()
 
     const handleUpdateProfile = (e) => {
         e.preventDefault()
@@ -15,9 +17,14 @@ const UpdateProfile = () => {
 
         updateUserProfile({displayName: name, photoURL: photo})
         .then(() => {
-            console.log("kdfdk")
+          // setUser(prev => [...prev, {displayName: name, photoURL: photo}] )
+            navigate("/my_profile")
         })
     }
+
+    // setUser(prev=>{
+// ...prev,displayName: yourInputValue, photoUrl:yourInputValue
+// })
 
     return (
       <div className="card w-full mx-auto max-w-md shrink-0 shadow-2xl mt-12 border">

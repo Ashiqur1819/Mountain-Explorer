@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 const MyProfile = () => {
     const {user} = useContext(AuthContext)
-    console.log(user.displayName)
     return (
       <div className="max-w-2xl mx-auto  p-12 rounded-lg shadow-lg mt-12 bg-gray-100">
         <div className="md:flex items-center gap-6">

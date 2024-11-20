@@ -39,11 +39,15 @@ const Login = () => {
         .then((result) => {
           console.log(result.user);
           setUser(result.user)
-          toast.success(` Login successful! Welcome back!`);
+          toast.success(` Login successful! Welcome back!`, {
+            position: "top-left",
+          });
           navigate(location?.state ? location.state : "/")
         })
         .catch(() => {
-         toast.error("Invalid login credentials. Please try again.")
+         toast.error("Invalid login credentials. Please try again.", {
+           position: "top-left",
+         });
         });
 
   }
@@ -53,13 +57,15 @@ const Login = () => {
          .then((result) => {
            console.log(result.user);
            setUser(result.user)
-                   toast.success(
-                     `Google login successful!`
-                   );
+                   toast.success(`Google login successful!`, {
+                     position: "top-left",
+                   });
             navigate(location?.state ? location.state : "/");
          })
          .catch(() => {
-           toast.error("Google login failed! Please try again.");
+           toast.error("Google login failed! Please try again.", {
+             position: "top-left",
+           });
          });
      };
 

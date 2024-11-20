@@ -9,13 +9,19 @@ import Error from "../pages/Error";
 import PrivateRoute from "./PrivateRoute";
 import AdventureDetails from "../components/AdventureDetails";
 import ForgetPassword from "../components/ForgetPassword";
+import DynamicTitle from "../components/DynamicTitle";
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Mainlayout></Mainlayout>,
+    element: (
+      <>
+        <DynamicTitle></DynamicTitle>
+        <Mainlayout></Mainlayout>
+      </>
+    ),
     errorElement: <Error></Error>,
     children: [
       {

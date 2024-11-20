@@ -1,4 +1,5 @@
 # Mountain Explorer
+Mountain Explorer is an adventurous and interactive website for nature enthusiasts who love exploring mountains and outdoor trails. Built with React.js, the platform provides details about treks, routes, tips, and booking opportunities for thrilling adventures.
 
 ## Purpose
 The primary goal of this project is to offer a user-friendly platform for adventure seekers to:  
