@@ -27,11 +27,10 @@ const DynamicTitle = () => {
   };
 
   useEffect(() => {
-    // Update the document title dynamically based on the location pathname
     document.title = getTitle(location.pathname);
-  }, [location.pathname]); // Re-run when the path changes
+  }, [location.pathname]);
 
-  return null; // No UI is needed, just changing the title
+  return null;
 };
 
 export default DynamicTitle;

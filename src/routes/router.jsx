@@ -1,4 +1,4 @@
-import { createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Mainlayout from "../layouts/Mainlayout";
 import Home from "../pages/Home";
 import MyProfile from "../pages/MyProfile";
@@ -10,8 +10,6 @@ import PrivateRoute from "./PrivateRoute";
 import AdventureDetails from "../components/AdventureDetails";
 import ForgetPassword from "../components/ForgetPassword";
 import DynamicTitle from "../components/DynamicTitle";
-
-
 
 const router = createBrowserRouter([
   {

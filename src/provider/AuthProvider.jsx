@@ -1,93 +1,95 @@
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  signOut,
+  updateProfile,
+} from "firebase/auth";
 import { toast } from "react-toastify";
 
+export const AuthContext = createContext();
+const googleProvider = new GoogleAuthProvider();
 
+const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [email, setEmail] = useState("");
 
-export const AuthContext = createContext()
-const googleProvider = new GoogleAuthProvider()
+  // Sign Up
+  const createNewUser = (email, password) => {
+    setLoading(true);
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
 
-const AuthProvider = ({children}) => {
+  // Log In
+  const userLogin = (email, password) => {
+    setLoading(true);
+    return signInWithEmailAndPassword(auth, email, password);
+  };
 
-    const [user, setUser] = useState(null)
-    const [loading, setLoading] = useState(true)
-     const [email, setEmail] = useState("");
+  // Google Log In
+  const loginWithGoogle = () => {
+    setLoading(true);
+    return signInWithPopup(auth, googleProvider);
+  };
 
-    // Sign Up
-    const createNewUser = (email, password) => {
-        setLoading(true)
-       return createUserWithEmailAndPassword(auth, email, password)
-    }
+  // Log Out
+  const logOut = () => {
+    signOut(auth).then((result) => {
+      toast.success("You've successfully logged out. See you soon!");
+      setUser(result);
+      return;
+    });
+  };
 
-    // Log In
-    const userLogin = (email, password) => {
-        setLoading(true)
-        return signInWithEmailAndPassword(auth, email, password);
-    }
+  //  Forget password
+  const forgetPassword = (email) => {
+    setLoading(true);
+    return sendPasswordResetEmail(auth, email);
+  };
 
-    // Google Log In
-    const loginWithGoogle = () => {
-        setLoading(true)
-       return signInWithPopup(auth, googleProvider);
-    }
+  // Update User Profile
+  const updateUserProfile = (updatedData) => {
+    return updateProfile(auth.currentUser, updatedData);
+  };
 
-    // Log Out
-       const logOut = () => {
-         signOut(auth)
-           .then((result) => {
-               toast.success("You've successfully logged out. See you soon!");
-             setUser(result);
-            setLoading(true)
-           })
-       };
-
-      // //  Forget password
-      const forgetPassword = (email) => {
-          setLoading(true);
-        return sendPasswordResetEmail(auth, email);
+  // On State change
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      if (user) {
+        setUser(null);
       }
+      setUser(currentUser);
+      setLoading(false);
+    });
 
-    // Update User Profile
-    const updateUserProfile = (updatedData) => {
-        return updateProfile(auth.currentUser, updatedData)
-    }
-
-    // On State change
-    useEffect( () => {
-        const unsubscribe = onAuthStateChanged(auth, currentUser => {
-          if(user){
-            setUser(null)
-          }
-            setUser(currentUser)
-            setLoading(false)
-        })
-
-        return() => {
-            unsubscribe()
-        }
-    },[])
-
-
-    const authInfo = {
-      createNewUser,
-      userLogin,
-      loginWithGoogle,
-      user,
-      setUser,
-      updateUserProfile,
-      logOut,
-      loading,
-      email,
-      setEmail,
-      forgetPassword,
+    return () => {
+      unsubscribe();
     };
+  }, []);
 
-    return (
-      <AuthContext.Provider value={authInfo}>
-        {children}
-      </AuthContext.Provider>
-    );
+  const authInfo = {
+    createNewUser,
+    userLogin,
+    loginWithGoogle,
+    user,
+    setUser,
+    updateUserProfile,
+    logOut,
+    loading,
+    email,
+    setEmail,
+    forgetPassword,
+  };
+
+  return (
+    <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
+  );
 };
 
 export default AuthProvider;

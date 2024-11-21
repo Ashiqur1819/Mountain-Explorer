@@ -1,14 +1,11 @@
 import { Link, useLoaderData } from "react-router-dom";
-import consulting from "../assets/consulting.png"
-
-
+import consulting from "../assets/consulting.png";
 
 const AdventureDetails = () => {
-
   const currentTime = new Date();
   const currentHour = currentTime.getHours();
-  const startHour = 10; // 10:00 AM
-  const endHour = 20; // 8:00 PM
+  const startHour = 10; 
+  const endHour = 20; 
 
   const condition = currentHour >= startHour && currentHour < endHour;
 

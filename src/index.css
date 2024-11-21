@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
-    color: #c2c7d3;
-    background: #2b3440;
+.active {
+  color: #c2c7d3;
+  background: #2b3440;
 }
 
-body{
-    overflow-y: scroll;
+body {
+  overflow-y: scroll;
 }
