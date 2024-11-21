@@ -30,7 +30,7 @@ const ForgetPassword = () => {
   };
 
   return (
-    <div className="card w-full mx-auto max-w-md shrink-0 shadow-2xl mt-12">
+    <div className="card w-full mx-auto max-w-md shrink-0 shadow-2xl mt-12 bg-white">
       <form onSubmit={handleForgetPassword} action="" className="card-body">
         <div className="form-control">
           <label className="label">

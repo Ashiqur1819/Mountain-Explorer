@@ -28,7 +28,7 @@ const AdventureDetails = () => {
   } = adventureDetails;
 
   return (
-    <div className="mt-6 border p-6 rounded-lg shadow-lg">
+    <div className="mt-6 border p-6 rounded-lg shadow-lg bg-white">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
         <div>
           <img
@@ -128,7 +128,7 @@ const AdventureDetails = () => {
 
       {/* Open the modal using document.getElementById('ID').showModal() method */}
 
-      <dialog id="my_modal_1" className="modal">
+      <dialog id="my_modal_1" className="modal bg-white">
         <div className="modal-box">
           <img src={consulting} className="w-32 mx-auto" alt="" />
           <h3 className="font-bold text-3xl text-teal-500 text-center mt-3">

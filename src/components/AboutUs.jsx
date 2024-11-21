@@ -3,8 +3,8 @@ import banner from "../assets/banner.png";
 const AboutUs = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 mt-24">
-      <figure>
-        <img src={banner} alt="" />
+      <figure className="border border-teal-600 rounded-full">
+        <img src={banner} className="rounded-full" alt="" />
       </figure>
       <div>
         <h4 className="font-medium text-xl">WHO WE ARE</h4>

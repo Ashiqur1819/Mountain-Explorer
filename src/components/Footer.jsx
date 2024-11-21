@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-neutral">
-      <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12">
-        <div className="footer text-neutral-content p-10">
+      <div className="max-w-7xl mx-auto px-3 md:px-6 lg:px-12 ">
+        <div className="footer text-neutral-content p-10 ">
           <nav>
             <h6 className="footer-title">Services</h6>
             <a className="link link-hover">Guided Trekking Tours</a>

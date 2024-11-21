@@ -74,7 +74,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="card w-full mx-auto max-w-md shrink-0 shadow-2xl mt-12 border">
+    <div className="card w-full mx-auto max-w-md shrink-0 shadow-2xl mt-12 border bg-white">
       <h2 className="text-3xl font-bold text-center mt-6 text-teal-500">
         Create a New Account
       </h2>

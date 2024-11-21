@@ -5,7 +5,7 @@ import Slider from "../components/Slider";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-blue-50">
       <Slider></Slider>
       <Adventures></Adventures>
       <AboutUs></AboutUs>

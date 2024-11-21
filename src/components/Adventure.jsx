@@ -4,7 +4,7 @@ import "animate.css";
 const Adventure = ({ adventure }) => {
   const { id, adventureTitle, image, ecoFriendlyFeatures } = adventure;
   return (
-    <div className="p-6 rounded-lg shadow-md">
+    <div className="p-6 rounded-lg shadow-md bg-white">
       <img
         src={image}
         className="w-full h-[200px] object-cover rounded-lg"

@@ -8,9 +8,12 @@ const Slider = () => {
       <div className="carousel w-full rounded-lg lg:mt-6">
         <div
           id="slide1"
-          className="carousel-item relative w-full h-[400px] md:h-[600px]"
+          className="carousel-item relative w-full h-[450px] md:h-[600px]"
         >
-          <img src={slide2} className="w-full object-cover" />
+          <img
+            src={slide2}
+            className="w-full h-[450px] md:h-[600px] object-cover"
+          />
           <div
             style={{ backgroundColor: "rgba(0, 0, 0, .5)" }}
             className="absolute  w-full h-[450px] md:h-[600px]"
@@ -36,12 +39,12 @@ const Slider = () => {
         </div>
         <div
           id="slide2"
-          className="carousel-item relative w-full  h-[400px] md:h-[600px]"
+          className="carousel-item relative w-full  h-[450px] md:h-[600px]"
         >
           <img src={slide1} className="w-full object-cover" />
           <div
             style={{ backgroundColor: "rgba(0, 0, 0, .5)" }}
-            className="absolute  w-full h-[400px] md:h-[600px]"
+            className="absolute  w-full h-[450px] md:h-[600px]"
           >
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold  text-amber-400 max-w-3xl lg:max-w-4xl ml-6 md:ml-16 lg:ml-24 mt-12 md:mt-40 p-3">
               Challenge the Mountains, Embrace the Adventure
@@ -66,12 +69,12 @@ const Slider = () => {
         </div>
         <div
           id="slide3"
-          className="carousel-item relative w-full h-[400px] md:h-[600px]"
+          className="carousel-item relative w-full h-[450px] md:h-[600px]"
         >
           <img src={slide3} className="w-full object-cover" />
           <div
             style={{ backgroundColor: "rgba(0, 0, 0, .7)" }}
-            className="absolute  w-full h-[400px] md:h-[600px]"
+            className="absolute  w-full h-[450px] md:h-[600px]"
           >
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold  text-amber-400 max-w-3xl md:max-w-xl lg:max-w-4xl ml-6 md:ml-16 lg:ml-24  mt-12 md:mt-36 p-3">
               Find Solitude and Adventure Among the Peaks
