@@ -128,8 +128,8 @@ const AdventureDetails = () => {
 
       {/* Open the modal using document.getElementById('ID').showModal() method */}
 
-      <dialog id="my_modal_1" className="modal bg-white">
-        <div className="modal-box">
+      <dialog id="my_modal_1" className="modal">
+        <div className="modal-box  bg-white">
           <img src={consulting} className="w-32 mx-auto" alt="" />
           <h3 className="font-bold text-3xl text-teal-500 text-center mt-3">
             {" "}
