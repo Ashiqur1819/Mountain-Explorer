@@ -35,4 +35,4 @@ The following NPM packages are used in the project:
 - `firebase`: For authentication.
 
 ## Live Link
-https://assignment-09-mountain-explorer.netlify.app/
+https://mountain-explorer.web.app
