@@ -10,7 +10,6 @@ const Services = () => {
         fetch("services.json")
         .then(res => res.json())
         .then(data => setServices(data))
-        .catch(error => console.log(error))
     }, [])
 
     return (

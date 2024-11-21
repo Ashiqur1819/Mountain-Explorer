@@ -37,7 +37,6 @@ const Login = () => {
 
       userLogin(email, password)
         .then((result) => {
-          console.log(result.user);
           setUser(result.user)
           toast.success(` Login successful! Welcome back!`, {
             position: "top-left",
@@ -55,7 +54,6 @@ const Login = () => {
      const handleLoginwithGoogle = () => {
        loginWithGoogle()
          .then((result) => {
-           console.log(result.user);
            setUser(result.user)
                    toast.success(`Google login successful!`, {
                      position: "top-left",

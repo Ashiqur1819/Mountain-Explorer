@@ -37,7 +37,7 @@ const AuthProvider = ({children}) => {
          signOut(auth)
            .then((result) => {
                toast.success("You've successfully logged out. See you soon!");
-             setUser(result.user);
+             setUser(result);
             setLoading(true)
            })
        };
@@ -56,6 +56,9 @@ const AuthProvider = ({children}) => {
     // On State change
     useEffect( () => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
+          if(user){
+            setUser(null)
+          }
             setUser(currentUser)
             setLoading(false)
         })

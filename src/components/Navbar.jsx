@@ -9,7 +9,7 @@ const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   
     const links = (
-      <div className="lg:flex items-center gap-6">
+      <div className="lg:flex items-center gap-6 text-white">
         <li className="">
           <NavLink to="/">Home</NavLink>
         </li>
@@ -27,7 +27,7 @@ const Navbar = () => {
     );
 
     return (
-      <div className="navbar px-3 md:px-6 lg:px-12 py-6">
+      <div className="navbar px-3 md:px-6 lg:px-12 py-6 bg-gray-700">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="lg:hidden mr-2">
@@ -53,7 +53,7 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="text-lg md:text-2xl font-bold hidden md:inline-block">
+          <a className="text-lg md:text-3xl text-white font-bold hidden md:inline-block">
             Mountain Explorer
           </a>
           <img src={logo} className="w-16 md:hidden" alt="" />

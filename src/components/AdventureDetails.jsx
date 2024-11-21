@@ -71,7 +71,7 @@ const AdventureDetails = () => {
               {adventureLevel}
             </span>
           </p>
-          <p className="font-bold">
+          <div className="font-bold">
             Included Items:
             <div>
               {includedItems.map((item, index) => (
@@ -83,7 +83,7 @@ const AdventureDetails = () => {
                 </p>
               ))}
             </div>
-          </p>
+          </div>
           <p className="font-bold">
             Eco-Friendly Features:
             <div>

@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
-import { FaGoogle } from 'react-icons/fa';
+import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
@@ -9,8 +9,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 const SignUp = () => {
 
-    const { createNewUser, setUser, updateUserProfile, loginWithGoogle } =
+    const { createNewUser, setUser, updateUserProfile, loginWithGoogle, setLoader } =
       useContext(AuthContext);
+        const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate()
 
     const handleSignUp = (e) => {
@@ -46,8 +47,9 @@ const SignUp = () => {
           
               updateUserProfile({ displayName: name, photoURL: photo }).then(
                 () => {
-                  console.log("fdfdj")
+                   setUser((prev) => ({ ...prev, displayName: name, photoURL: photo }));
                   navigate("/");
+                  setLoader(true)
                 }
               );
         })
@@ -120,20 +122,28 @@ const SignUp = () => {
                required
              />
            </div>
-           <div className="form-control">
+           <div className="form-control relative">
              <label className="label">
                <span className="label-text text-base font-medium">
                  Password:
                </span>
              </label>
              <input
-               type="password"
+               type={showPassword ? "text" : "password"}
                name="password"
                placeholder="Enter your password"
                className="input input-bordered"
                required
              />
+             <button
+               type="button"
+               onClick={() => setShowPassword(!showPassword)}
+               className="absolute right-4 top-[57px]"
+             >
+               {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
+             </button>
            </div>
+           <label className="label"></label>
            <div className="form-control mt-6">
              <button className="py-2 px-6 text-lg rounded-lg bg-purple-700  text-white cursor-pointer font-semibold hover:bg-purple-600 ">
                Sign Up

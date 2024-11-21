@@ -1,12 +1,9 @@
 import { useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
-
-
 const DynamicTitle = () => {
   const location = useLocation();
-  const params = useParams()
-  console.log(params);
+  const params = useParams();
 
   const getTitle = () => {
     switch (location.pathname) {
