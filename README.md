@@ -3,7 +3,7 @@
 
 **Mountain Explorer** is an interactive web application designed for nature enthusiasts who love exploring mountains and outdoor trails. Built with React.js, it offers detailed information about treks, routes, tips, and booking opportunities for thrilling adventures.
 
-![Mountain Explorer Screenshot](https://i.ibb.co.com/4Vdjx4V/mountain-explorer.png)
+![Mountain Explorer Screenshot](https://i.ibb.co.com/JzwMNV3/mountain-explorer.png)
 
 ---
 
