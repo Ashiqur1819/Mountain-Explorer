@@ -1,16 +1,13 @@
 
 # Mountain Explorer
 
-**Mountain Explorer** is an interactive web application designed for nature enthusiasts who love exploring mountains and outdoor trails. Built with React.js, it offers detailed information about treks, routes, tips, and booking opportunities for thrilling adventures.
-
 ![Mountain Explorer Screenshot](https://i.ibb.co.com/JzwMNV3/mountain-explorer.png)
 
 ---
 
 ## Overview
 
-Mountain Explorer aims to provide a seamless and immersive experience for users who enjoy outdoor activities. The platform enables users to explore treks, manage bookings, and access essential tips for a safe and thrilling journey.
-
+**Mountain Explorer** is an engaging web application tailored for outdoor enthusiasts passionate about mountain adventures. Developed with React.js, it provides in-depth information on treks, routes, safety tips, and booking facilities. The platform is designed for both beginner and experienced adventurers, offering personalized recommendations, interactive maps, and user reviews to enhance the exploration experience. Its responsive design ensures seamless access across devices, making it a reliable companion for planning and managing thrilling outdoor activities.
 ---
 
 ## Technologies Used
@@ -89,12 +86,19 @@ Follow these steps to run Mountain Explorer on your local machine:
 
    ```bash
    git clone https://github.com/Ashiqur1819/Mountain-Explorer-.git
-   cd Mountain-Explorer-
+   cd Mountain-Explorer
    
+2. **Install dependencies:**:
+   ```bash
+   npm install
 
-- `npm install`
-- `npm run dev`
+3. **Start the Application:**:
+   ```bash
+   npm run dev
 ---
 
 ## Live Demo
-https://mountain-explorer.web.app
+### Live Link:
+https://mountain-explorer.web.app/
+### Github Repository:
+https://github.com/Ashiqur1819/Mountain-Explorer
