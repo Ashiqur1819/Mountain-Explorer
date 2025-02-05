@@ -6,9 +6,8 @@
 ---
 
 ## Overview
+Mountain Explorer is an engaging web application tailored for outdoor enthusiasts passionate about mountain adventures. Developed with React.js, it provides in-depth information on treks, routes, safety tips, and booking facilities. The platform is designed for both beginner and experienced adventurers, offering personalized recommendations, interactive maps, and user reviews to enhance the exploration experience. Its responsive design ensures seamless access across devices, making it a reliable companion for planning and managing thrilling outdoor activities.
 
-**Mountain Explorer** is an engaging web application tailored for outdoor enthusiasts passionate about mountain adventures. Developed with React.js, it provides in-depth information on treks, routes, safety tips, and booking facilities. The platform is designed for both beginner and experienced adventurers, offering personalized recommendations, interactive maps, and user reviews to enhance the exploration experience. Its responsive design ensures seamless access across devices, making it a reliable companion for planning and managing thrilling outdoor activities.
----
 
 ## Technologies Used
 ### Frontend
